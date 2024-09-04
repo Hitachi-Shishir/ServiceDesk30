@@ -424,7 +424,6 @@
             <asp:PostBackTrigger ControlID="btnAssignToOther" />
             <asp:PostBackTrigger ControlID="btnDueSoonTickets" />
             <asp:PostBackTrigger ControlID="btnTicketEsclated" />
-
         </Triggers>
     </asp:UpdatePanel>
 </asp:Content>
