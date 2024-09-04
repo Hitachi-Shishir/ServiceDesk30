@@ -66,43 +66,43 @@ namespace ServiceDesk30
         {
             //if (Session["UserID"] != null & Session["LoginName"] != null && Session["UserScope"] != null && Session["EmpID"] != null && Session["OrgID"] != null)
             //{
-                //if (Session["UserScope"].ToString() == "SDUser")
-                //{
-                //    pnlgridrow.Visible = false;
-                //    pnltickcount.Visible = false;
-                //}
-                //else if (Session["UserScope"].ToString() == "Technician" || Session["UserScope"].ToString() == "Admin")
-                //{
-                //    btnDelteBulkTicket.Visible = false;
-                //}
-                //else
-                //{
-                //    pnlgridrow.Visible = true;
-                //}
+            if (Session["UserScope"].ToString() == "SDUser")
+            {
+                pnlgridrow.Visible = false;
+                //pnltickcount.Visible = false;
+            }
+            //else if (Session["UserScope"].ToString() == "Technician" || Session["UserScope"].ToString() == "Admin")
+            //{
+            //    btnDelteBulkTicket.Visible = false;
+            //}
+            //else
+            //{
+            //    pnlgridrow.Visible = true;
+            //}
 
-                //if (!IsPostBack)
-                //{
+            //if (!IsPostBack)
+            //{
 
-                //    //if (querystring == "")
-                //    //{
-                //    //	FillAllRequests(querystring);
-                //    //}
-                //    open = 0;
-                //    wip = 0;
-                //    assigned = 0;
-                //    unassigned = 0;
-                //    due = 0;
-                //    duesoon = 0;
+            //    //if (querystring == "")
+            //    //{
+            //    //	FillAllRequests(querystring);
+            //    //}
+            //    open = 0;
+            //    wip = 0;
+            //    assigned = 0;
+            //    unassigned = 0;
+            //    due = 0;
+            //    duesoon = 0;
 
-                //    if (Session["UserType"].ToString().Contains("mcadmin"))
-                //    {
-                //        string ss = Session["UserType"].ToString();
-                //        FillOrganization();
+            //    if (Session["UserType"].ToString().Contains("mcadmin"))
+            //    {
+            //        string ss = Session["UserType"].ToString();
+            //        FillOrganization();
 
-                //    }
-                //    else
-                //    {
-                        FillOrganization();
+            //    }
+            //    else
+            //    {
+            FillOrganization();
                 //        ddlOrg.Items.FindByValue(Session["OrgID"].ToString()).Selected = true;
                 //        ddlOrg_SelectedIndexChanged(sender, e);
                 //        ddlOrg.Enabled = false;
