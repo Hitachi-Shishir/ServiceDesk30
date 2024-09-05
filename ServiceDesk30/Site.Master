@@ -6,6 +6,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
     <title>Hitachi</title>
     <!--favicon-->
     <link rel="icon" href="assets/images/Hitachi/Hitachi_logo.png" type="image/png">
@@ -13,11 +15,11 @@
     <link href="assets/css/pace.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Scripts/chosen.css" />
     <script src="assets/js/pace.min.js"></script>
-     <script>
-         function pageLoad() {
-             jQuery(".chzn-select").data("placeholder", "Select Frameworks...").chosen();
-         }
-     </script>
+    <script>
+        function pageLoad() {
+            jQuery(".chzn-select").data("placeholder", "Select Frameworks...").chosen();
+        }
+    </script>
     <!--plugins-->
 
     <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
@@ -985,7 +987,7 @@
         $(".data-attributes span").peity("donut")
     </script>
     <script src="assets/js/dashboard2.js"></script>
-   
-    
+
+
 </body>
 </html>
