@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ServiceDesk30._Default" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,17 +44,15 @@
             vertical-align: middle;
             margin-left: 5px; /* Adjust spacing as needed */
         }
-        
 
-  
+
+
 
         /* Background when checked */
         input[type="checkbox"]:checked {
             background-color: #4caf50 !important; /* Green when checked */
             border: 2px solid #4caf50 !important;
         }
-
-     
     </style>
     <style>
         * {
@@ -74,21 +73,22 @@
             /* grid-template-columns: auto auto ; */
             grid-template-columns: 60% auto;
         }
-    .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0; /* Padding for spacing */
-    text-align: center;
-    font-size: 0.875em; /* Font size for the footer text */
-    color: #6c757d; /* Text color (adjust as needed) */
-}
 
-/* Main content styling */
-main {
-    padding-bottom: 50px; /* Space for footer height to avoid overlap */
-}
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0; /* Padding for spacing */
+            text-align: center;
+            font-size: 0.875em; /* Font size for the footer text */
+            color: #6c757d; /* Text color (adjust as needed) */
+        }
+
+        /* Main content styling */
+        main {
+            padding-bottom: 50px; /* Space for footer height to avoid overlap */
+        }
 
         body {
             min-height: 100%;
@@ -506,13 +506,13 @@ main {
                                                             <asp:CheckBox ID="chkRemb2FA" runat="server" name="item" />
                                                             Remember 2FA For 30 Days in this System ! 
                                                         </label>
-                                                       
 
-                                                                                                            </div>
-                                                     <div class="small text-start">
-     <asp:LinkButton ID="LinkButton1" Text="Forget password?" runat="server" OnClick="lnkFrgtPass_Click"></asp:LinkButton>
 
- </div>
+                                                    </div>
+                                                    <div class="small text-start">
+                                                        <asp:LinkButton ID="LinkButton1" Text="Forget password?" runat="server" OnClick="lnkFrgtPass_Click"></asp:LinkButton>
+
+                                                    </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-6">
@@ -593,7 +593,7 @@ main {
                                                 <%--<h4 class="text-white-50 py-3">Welcome Back!</h4>--%>
                                                 <%--<h5 class="text-white-50 px-4" id="dynamic-text">"Your personal space is ready for you"</h5>--%>
                                                 <%--<h5 class="text-white-50 px-5 mt-5"  >SOCIAL INNOVATION – IT'S OUR FUTURE</h5>--%>
-                                                <h5 class="text-white-50 px-5 mt-5"  >Hitachi
+                                                <h5 class="text-white-50 px-5 mt-5">Hitachi
 Social Innovation is POWERING GOOD</h5>
                                                 <h5 class="text-white-50 px-3">_____</h5>
                                             </div>
@@ -616,9 +616,9 @@ Social Innovation is POWERING GOOD</h5>
 
 
 
-        <footer class="footer text-center">
-        <p class="text-muted mb-0" style="font-size:0.675em;">©<a href="https://hitachi-systems.co.in/" class="text-muted" target="_blank">Hitachi Systems India</a>  2022. All rights reserved.</p>
-    </footer>
+                        <footer class="footer text-center">
+                            <p class="text-muted mb-0" style="font-size: 0.675em;">©<a href="https://hitachi-systems.co.in/" class="text-muted" target="_blank">Hitachi Systems India</a>  2022. All rights reserved.</p>
+                        </footer>
 
                     </div>
                 </div>
